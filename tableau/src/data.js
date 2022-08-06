@@ -8,6 +8,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 35,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[87,29,58,38],
+        not:[1,7,3,6],
+        not_sure:[12,64,39,56]
+    }
   },
   {
     year: 2015,
@@ -18,6 +24,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 45,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[87,29,58,38],
+        not:[1,7,3,6],
+        not_sure:[12,64,39,56]
+    }
   },
   {
     year: 2016,
@@ -28,6 +40,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 44,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[87,29,58,38],
+        not:[1,7,3,6],
+        not_sure:[12,64,39,56]
+    }
   },
   {
     year: 2017,
@@ -38,6 +56,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 35,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[74,22,47,46],
+        not:[1,3,3,2],
+        not_sure:[25,75,50,52]
+    }
   },
   {
     year: 2018,
@@ -48,6 +72,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 51,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[89,28,56,41],
+        not:[1,6,4,11],
+        not_sure:[10,66,40,48]
+    }
   },
   {
     year: 2019,
@@ -58,6 +88,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 54,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[88,30,64,35],
+        not:[1,8,3,5],
+        not_sure:[11,62,33,60]
+    }
   },
   {
     year: 2020,
@@ -68,6 +104,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 39,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[90,30,60,31],
+        not:[1,7,3,5],
+        not_sure:[9,63,37,64]
+    }
   },
   {
     year: 2021,
@@ -78,6 +120,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 41,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[95,36,63,34],
+        not:[1,8,2,4],
+        not_sure:[4,56,35,62]
+    }
   },{
     year: 2022,
     saved: 301,
@@ -87,6 +135,12 @@ const data = [
       labels: ["0-1 puppy", "2-6 adults", "7+ senior"],
       avg: 57,
     },
+    proportion: {
+        labels:["Gets Along with Dogs","Gets Along with Cats","Gets Along with Kids","Are Housebroken"],
+        does:[96,34,62,45],
+        not:[1,10,4,11],
+        not_sure:[3,56,34,44]
+    }
   }
 ];
 

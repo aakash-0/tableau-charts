@@ -16,8 +16,8 @@ function HorizontalBarChart({index,setindex}) {
         axis: 'y',
         data: data[index===null?0:index].Average.AvgNo ,
         fill: true,
-        backgroundColor: "rgba(75,192,192,0.2)",
-        borderColor: "rgba(75,192,192,1)",
+        backgroundColor: "rgb(151,226,231)",
+        borderColor: "rgb(151,226,231)",
       },
     ],
     options: {
@@ -32,8 +32,8 @@ function HorizontalBarChart({index,setindex}) {
               axis: 'y',
               data: data[index===null?0:index].Average.AvgNo ,
               fill: true,
-              backgroundColor: "rgba(75,192,192,0.2)",
-              borderColor: "rgba(75,192,192,1)",
+              backgroundColor: "rgb(151,226,231)",
+              borderColor: "rgb(151,226,231)",
             },
           ]
         })
