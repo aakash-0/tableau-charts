@@ -41,17 +41,41 @@ function HorizontalBarChart({index,setindex}) {
       console.log(avgData)
   return (
     <div>
-        <div style={{ width: "50rem" }}>
-        
-        <Bar  data={avgData} plugins={[ChartDataLabels]} options={{
+            <div>
+                Avg Time to Atopt
+            </div>
+            <div>
+                {
+                    index===null?45:data[index].Average.avg 
+                }
+            </div>
+            <div>
+                Avg Time to Adopt by Age Bucket
+            </div>
+        <div style={{ width: "20rem" }}>
+            <Bar  data={avgData} plugins={[ChartDataLabels]} options={{
      indexAxis: 'y',
      plugins:{
           title:{display:false, font:{size: 12, family: 'rubik'}},
           legend: {display: false, position: 'right'}},
+          
+          scales:{
+            yAxis:{
+                grid: {
+                    display: false
+                },
+            },
+            xAxis:{
+                grid: {
+                    display: false
+                },
+            }
+        },
      maintainAspectRatio: false
      }}   />
         
       </div>
+      <h5>Note:Starts at Date of Transport</h5>
     </div>
   )
 }

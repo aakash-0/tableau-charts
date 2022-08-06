@@ -45,6 +45,7 @@ function StackedHorizontalBarChart({index,setindex}) {
               axis: 'y',
               data: data[index===null?0:index].proportion.does ,
               fill: true,
+              label:"Does/Are",
               backgroundColor: "rgb(151,226,231)",
               borderColor: "rgb(151,226,231)",
             },
@@ -52,6 +53,7 @@ function StackedHorizontalBarChart({index,setindex}) {
                 axis: 'y',
                 data: data[index===null?0:index].proportion.not ,
                 fill: true,
+                label:"Does Not/Are Not",
                 backgroundColor: "rgb(92,96,104)",
                 borderColor: "rgb(92,96,104)",
               },
@@ -59,6 +61,7 @@ function StackedHorizontalBarChart({index,setindex}) {
                 axis: 'y',
                 data: data[index===null?0:index].proportion.not_sure,
                 fill: true,
+                label:"Not Sure",
                 backgroundColor: "rgb(214,215,219)",
                 borderColor: "rgb(214,215,219)",
               }
@@ -68,13 +71,15 @@ function StackedHorizontalBarChart({index,setindex}) {
 
   return (
     <div>
-        <div style={{ width: "50rem" }}>
+        <div>Characteristics</div>
+        <div>Proportion of Dogs that...</div>
+        <div style={{ width: "25rem" }}>
         
         <Bar  data={prData} plugins={[ChartDataLabels]} options={{
      indexAxis: 'y',
      plugins:{
           title:{display:false, font:{size: 12, family: 'rubik'}},
-          legend: {display: false, position: 'right'}},
+          legend: {display: true, position: 'bottom'}},
      maintainAspectRatio: false,
      scales: {
         xAxis: 
@@ -87,10 +92,16 @@ function StackedHorizontalBarChart({index,setindex}) {
                     stepSize: 20,
                     
                 },
+                grid:{
+                    display:false
+                },
                 stacked:true
                 
             },
         yAxis:{
+            grid:{
+                display:false
+            },
             stacked:true
         }
 

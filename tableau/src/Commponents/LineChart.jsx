@@ -39,8 +39,7 @@ function LineChart({ index, setindex }) {
   };
 
   return (
-    <div className="App">
-      <div style={{ width: "50rem" }}>
+      <div style={{ width: "40rem"}}>
         <div>
           Total life Save
           <br></br>
@@ -48,23 +47,26 @@ function LineChart({ index, setindex }) {
           <h1>{index == null ?10875: count}</h1> {/* set count to 1087 if count is null */}
         </div>
         <Line ref={chartRef} data={dogsData} onClick={onClick}  options={ {
-        legend: { display: false },
+        // legend: { display: false },
+        plugins:{
+            title:{display:false, font:{size: 12, family: 'rubik'}},
+            legend: {display: false, position: 'right'}},
         scales: {
             yAxis: 
                 {
                     ticks: {
                         
                         min: 0,
-                        max: 11000,
+                        max: 18000,
                         beginAtZero: true,
                         stepSize: 2000,
-                        padding:10
+                        
                     }
                 },
 
-      }}} />
+      }}}  />
       </div>
-    </div>
+    
   );
 }
 
