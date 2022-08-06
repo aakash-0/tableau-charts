@@ -13,6 +13,10 @@ const data = [
         does:[87,29,58,38],
         not:[1,7,3,6],
         not_sure:[12,64,39,56]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[1422,838,400,376,306,157,155,150,126,108]
     }
   },
   {
@@ -29,6 +33,10 @@ const data = [
         does:[87,29,58,38],
         not:[1,7,3,6],
         not_sure:[12,64,39,56]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[297,154,87,100,70,47,26,28,17,16]
     }
   },
   {
@@ -45,6 +53,10 @@ const data = [
         does:[87,29,58,38],
         not:[1,7,3,6],
         not_sure:[12,64,39,56]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[297,154,87,100,70,47,26,28,17,16]
     }
   },
   {
@@ -61,6 +73,10 @@ const data = [
         does:[74,22,47,46],
         not:[1,3,3,2],
         not_sure:[25,75,50,52]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[1422,838,400,376,306,157,155,150,126,108]
     }
   },
   {
@@ -77,6 +93,10 @@ const data = [
         does:[89,28,56,41],
         not:[1,6,4,11],
         not_sure:[10,66,40,48]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[295,211,87,66,90,31,43,22,21,20]
     }
   },
   {
@@ -93,6 +113,10 @@ const data = [
         does:[88,30,64,35],
         not:[1,8,3,5],
         not_sure:[11,62,33,60]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[320,181,104,95,65,26,26,30,22,18]
     }
   },
   {
@@ -109,6 +133,10 @@ const data = [
         does:[90,30,60,31],
         not:[1,7,3,5],
         not_sure:[9,63,37,64]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[244,146,68,47,47,67,26,38,24,23]
     }
   },
   {
@@ -125,6 +153,10 @@ const data = [
         does:[95,36,63,34],
         not:[1,8,2,4],
         not_sure:[4,56,35,62]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[184,124,35,40,25,34,73,21,41,50]
     }
   },{
     year: 2022,
@@ -140,6 +172,10 @@ const data = [
         does:[96,34,62,45],
         not:[1,10,4,11],
         not_sure:[3,56,34,44]
+    },
+    primary_breed:{
+        labels:["Labrador","Pit","Hound","Shepherd","Terrier","American","Catahoula","Hounds","Bll","German"],
+        numbers:[82,22,19,28,9,24,13,26,8,10]
     }
   }
 ];
