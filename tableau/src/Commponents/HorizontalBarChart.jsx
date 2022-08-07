@@ -41,15 +41,15 @@ function HorizontalBarChart({index,setindex}) {
       console.log(avgData)
   return (
     <div>
-            <div>
+            <div className='ls'>
                 Avg Time to Atopt
             </div>
-            <div>
+            <div className='ls-count'>
                 {
                     index===null?45:data[index].Average.avg 
                 }
             </div>
-            <div>
+            <div style={{fontSize:"1.4rem"}} className='ls' >
                 Avg Time to Adopt by Age Bucket
             </div>
         <div style={{ width: "20rem" }}>

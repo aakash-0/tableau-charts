@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   max-width: 100vw;
   background-color: rgb(246,246,246);
   display: flex;
@@ -22,7 +23,26 @@
 .right{
   display: flex;
   flex-direction: column;
+  gap:20px;
   justify-content: space-between;
  
+}
+.heading{
+  font-size: 3rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  color: rgb(83,83,83);
+}
+
+.count{
+  font-size:4rem;
+  font-weight: 700;
+}
+.ls{
+  font-size: 2rem;
+  color: rgb(83,83,83);
+}
+.ls-count{
+  font-size:3rem;
 }
 

@@ -39,7 +39,7 @@ function StackedBreed({index,setindex}) {
 
   return (
     <div>
-        <div>Top 10 Primary Breeds (including Mixes)</div>
+        <div style={{fontSize:"1.4rem"}} className='ls'>Top 10 Primary Breeds (including Mixes)</div>
     <div style={{ width: "20rem" ,height:"20rem"}}>
     
     <Bar  data={breedData} plugins={[ChartDataLabels]} options={{

@@ -71,8 +71,8 @@ function StackedHorizontalBarChart({index,setindex}) {
 
   return (
     <div>
-        <div>Characteristics</div>
-        <div>Proportion of Dogs that...</div>
+        <div className='ls'>Characteristics</div>
+        <div style={{fontSize:"1.4rem"}} className='ls'>Proportion of Dogs that...</div>
         <div style={{ width: "25rem" }}>
         
         <Bar  data={prData} plugins={[ChartDataLabels]} options={{

@@ -40,11 +40,11 @@ function LineChart({ index, setindex }) {
 
   return (
       <div style={{ width: "40rem"}}>
-        <div>
-          Total life Save
-          <br></br>
-          
-          <h1>{index == null ?10875: count}</h1> {/* set count to 1087 if count is null */}
+        <div className="heading">
+           Lives Saved
+           </div>
+          <div className="count">
+          {index == null ?10875: count} {/* set count to 1087 if count is null */}
         </div>
         <Line ref={chartRef} data={dogsData} onClick={onClick}  options={ {
         // legend: { display: false },

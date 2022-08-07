@@ -38,7 +38,7 @@ function AvgLineChart({index ,setindex }) {
     
   return (
     <div style={{ width: "20rem" }}>
-        <div>Avg Time to Adopt over Time</div>
+        <div style={{fontSize:"1.4rem"}} className='ls'>Avg Time to Adopt over Time</div>
          <Line  data={avgNo} options={ {
         legend: { display: false },
         plugins:{
