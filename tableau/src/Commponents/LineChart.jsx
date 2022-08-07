@@ -7,9 +7,8 @@ import data from "../data";
 import { useEffect } from "react";
 
 function LineChart({ index, setindex }) {
-
   const [count, setCount] = useState(0);
-//   number of saved dogs at a perticular year
+  //   number of saved dogs at a perticular year
 
   const [dogsData, setdogsData] = useState({
     labels: data.map((e) => e.year),
@@ -21,52 +20,62 @@ function LineChart({ index, setindex }) {
         borderColor: "rgba(75,192,192,1)",
       },
     ],
-   
   });
-//   dogs data for LineChart
+  //   dogs data for LineChart
 
   const [saved, setSaved] = useState(data.map((e) => e.saved));
-//   saved dogs data
+  //   saved dogs data
 
   const chartRef = useRef();
   useEffect(() => {
+    //update the index every time on click event
     setCount(saved[index]);
   }, [index, count]);
 
   const onClick = (event) => {
+    //click funtion for line graph
     var arr = getElementAtEvent(chartRef.current, event);
     setindex(arr[0].element.$context.index);
   };
 
   return (
-      <div style={{ width: "40rem"}}>
-        <div className="heading">
-           Lives Saved
-           </div>
-          <div className="count">
-          {index == null ?10875: count} {/* set count to 1087 if count is null */}
-        </div>
-        <Line ref={chartRef} data={dogsData} onClick={onClick}  options={ {
-        // legend: { display: false },
-        plugins:{
-            title:{display:false, font:{size: 12, family: 'rubik'}},
-            legend: {display: false, position: 'right'}},
-        scales: {
-            yAxis: 
-                {
-                    ticks: {
-                        
-                        min: 0,
-                        max: 18000,
-                        beginAtZero: true,
-                        stepSize: 2000,
-                        
-                    }
-                },
-
-      }}}  />
+    <div style={{ width: "40rem" }}>
+      <div className="heading">Lives Saved</div>
+      <div className="count">
+        {index == null ? 10875 : count}{" "}
+        {/* set count to 1087 if count is null */}
       </div>
-    
+      <Line
+        ref={chartRef}
+        data={dogsData}
+        onClick={onClick}
+        options={{
+          // legend: { display: false },
+          plugins: {
+            title: { display: false, font: { size: 12, family: "rubik" } },
+            legend: { display: false, position: "right" },
+          },
+          scales: {
+            yAxis: {
+              ticks: {
+                // labels step-sizes
+                min: 0,
+                max: 18000,
+                beginAtZero: true,
+                stepSize: 2000,
+
+                font: { weight: "bold", color: "black" },
+              },
+            },
+            xAxis: {
+              ticks: {
+                font: { weight: "bold", color: "black" },
+              },
+            },
+          },
+        }}
+      />
+    </div>
   );
 }
 
